@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9892082c8c482aa4e881982f5fe6c58d, type: 3}
   m_Name: AddressableConfig
   m_EditorClassIdentifier: 
-  prefix: YOURPREFIX_PropSpawner_PROP_
+  prefix: SilverEcho_PropSpawner_PROP_
   weaponPaths:
   - Assets/Build/WoodenCrate

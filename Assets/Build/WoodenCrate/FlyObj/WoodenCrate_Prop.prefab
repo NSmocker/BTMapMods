@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script:
-    luaScript: YOURPREFIX_PropSpawner_PROP_WoodenCrate_StabbableObject
+    luaScript: SilverEcho_PropSpawner_PROP_WoodenCrate_StabbableObject
     objList: []
     numberList: []
     stringList: []
