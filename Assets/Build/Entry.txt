@@ -1,0 +1,45 @@
+HitInfoConfig = CL.GameDataMgr.GetData(typeof(CL.HitInfoConfig))
+TextConfig = CL.GameDataMgr.GetData(typeof(CL.TextConfig)) 
+
+local function AddTextItem(name, array)
+    local newItem = CL.TextConfig.TextConfigItem()
+    newItem.Name = name
+    --newItem.Text = {"Test"}
+    defaultLang = array[1] or ""
+    for i=1,CL.LanguageMgr.SupportLanguages.Length,1 do
+        if array[i] == nil then
+            array[i] = arrayZero
+            --print("Set" .. i, defaultLang)
+        end
+    end
+    newItem.Text = array
+    TextConfig:AddData(newItem)
+end
+
+local function AddStoreItemTemplate(weaponName, dependWeapon, name, desc)
+    AddTextItem(weaponName, {name})
+    AddTextItem(weaponName .. "_Desc", {desc})
+
+    storeItem = CL.UnlockContentItem()
+    storeItem.name = weaponName
+    storeItem.dependItemName = dependWeapon
+    storeItem.iconName = weaponName
+    storeItem.contentType = CL.UnlockContentConfig.UnlockContentType.Weapon
+    storeItem.unlockRequireCoinNum = 1
+    CL.UnlockContentConfig.AddItem(storeItem)
+end
+
+local function AddProp(weaponName, name)
+    AddTextItem(weaponName, {name})
+    AddTextItem(weaponName .. "_Desc", {"Spawn the Prop Spawner to use this prop!"})
+
+    storeItem = CL.UnlockContentItem()
+    storeItem.name = weaponName
+    storeItem.dependItemName = "UF_PropSpawner_PropSpawner"
+    storeItem.iconName = weaponName
+    storeItem.contentType = CL.UnlockContentConfig.UnlockContentType.Simple
+    storeItem.unlockRequireCoinNum = 1
+    CL.UnlockContentConfig.AddItem(storeItem)
+end
+
+AddProp("YOURPREFIX_PropSpawner_PROP_WoodenCrate", "Prop - Wooden Crate")
