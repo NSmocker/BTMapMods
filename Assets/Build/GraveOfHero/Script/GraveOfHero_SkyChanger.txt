@@ -1,0 +1,22 @@
+local table = 
+{
+intensity=0,
+}
+
+function table:Start()
+   
+    UE.RenderSettings.ambientIntensity = self.intensity
+    print("[Sky Changer] Sky ambientIntensity turned of")
+    UE.RenderSettings.ambientSkyColor = UE.Color.black
+    print("[Sky Changer] Sky Ambient Color changed")
+    UE.RenderSettings.reflectionIntensity = self.intensity
+    print("[Sky Changer] Sky Reflections are turned off") 
+    UE.DynamicGI.UpdateEnvironment()
+    print("[Sky Changer] Enviroment updated") 
+    local dir_light = UE.GameObject.Find("Directional Light")
+    local light_info = dir_light.GetComponent(typeof(UE.Light))
+    light_info.intensity = self.intensity
+    print("[Sky Changer] Directional light is turned off") 
+end
+
+return Class(nil,nil,table)

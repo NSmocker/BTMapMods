@@ -42,4 +42,4 @@ local function AddProp(weaponName, name)
     CL.UnlockContentConfig.AddItem(storeItem)
 end
 
-AddProp("SilverEcho_PropSpawner_PROP_WoodenCrate", "SilverEcho - Wooden Crate")
+AddProp("SilverEcho_PropSpawner_PROP_GraveOfHero", "SilverEcho - GraveOfHero")
