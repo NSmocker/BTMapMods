@@ -15,28 +15,28 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_Data:
     m_SerializedData: []
-  m_GUID: b44e795687b149546b2d1a2bd4db70ef
+  m_GUID: 5d85540be8cfcc1408a5e72decad35ad
   m_SerializeEntries:
   - m_GUID: 560c7f9176fe20748a46a7981fb8716c
-    m_Address: LuaScript/SilverEcho_PropSpawner_PROP_LowPolyTutorMap_StabbableObject
+    m_Address: LuaScript/SilverEcho_PropSpawner_PROP_WoodenCrate_StabbableObject
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 4ea6817947ceac8408f8a53e05e8f93e
-    m_Address: ICon/SilverEcho_PropSpawner_PROP_LowPolyTutorMap
+    m_Address: ICon/SilverEcho_PropSpawner_PROP_WoodenCrate
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 1c32863fb5012e545beddc52ba3f83c3
-    m_Address: FlyObj/SilverEcho_PropSpawner_PROP_LowPolyTutorMap_Preview
+    m_Address: FlyObj/SilverEcho_PropSpawner_PROP_WoodenCrate_Preview
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 6d205b6ff1d949242860f28a902bfaaf
-    m_Address: FlyObj/SilverEcho_PropSpawner_PROP_LowPolyTutorMap_Prop
+    m_Address: FlyObj/SilverEcho_PropSpawner_PROP_WoodenCrate_Prop
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
