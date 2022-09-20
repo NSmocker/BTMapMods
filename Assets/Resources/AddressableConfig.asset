@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefix: SilverEcho_PropSpawner_PROP_
   weaponPaths:
-  - Assets/Build/WoodenCrate
+  - Assets/Build/LowPolyTutorMap
