@@ -51,7 +51,7 @@ MonoBehaviour:
   PointStart: {fileID: 1668223148725959192}
   PointEnd: {fileID: 4091678691646675244}
   MyColor: {r: 1, g: 1, b: 1, a: 1}
-  MyMaterial: {fileID: 0}
+  MyMaterial: {fileID: 2100000, guid: 75f756109f216ad409ff1a5ea7dd7b2c, type: 2}
 --- !u!1 &2703201819685565707
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,9 +49,6 @@ MonoBehaviour:
   selfRB: {fileID: 0}
   dependAttachObj: {fileID: 0}
   handPose: GunPose
-  handSide: 2
-  allowTrigger: 1
-  isClimbAttach: 0
   grabHandPose:
   - {fileID: 1627134337885775246}
   - {fileID: 6358809314141654510}

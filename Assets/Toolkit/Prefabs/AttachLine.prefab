@@ -129,9 +129,6 @@ MonoBehaviour:
   selfRB: {fileID: 0}
   dependAttachObj: {fileID: 0}
   handPose: HoldPose
-  handSide: 2
-  allowTrigger: 1
-  isClimbAttach: 0
   lineStartPoint: 0
   lineEndPoint: -0.13
   designCallingPos: 0

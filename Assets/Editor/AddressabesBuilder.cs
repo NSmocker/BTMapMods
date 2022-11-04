@@ -12,6 +12,29 @@ namespace CrossLink
     static public class AddressabesBuilder
     {
 
+        [MenuItem("Tools/Open PC Mod Folder %#t")]
+        static void OpenPCModFolder()
+        {
+            EditorUtility.RevealInFinder(GetPCModPath());
+        }
+        
+        static string GetPCModPath()
+        {
+            var targetpath = Application.persistentDataPath;
+
+            var splitedPath = targetpath.Split('/');
+            int len = splitedPath.Length;
+            targetpath = "";
+            for (int i = 0; i < len - 2; ++i)
+            {
+                targetpath += splitedPath[i] + "/";
+            }
+            targetpath += "CrossLink/BattleTalent/Mods";
+
+            return targetpath;
+        }
+
+
         [MenuItem("BuildTools/FastBuildAndInstallForWindows")]
         public static void FastBuildAndInstallForWindows()
         {
@@ -26,6 +49,12 @@ namespace CrossLink
         public static void FastBuildAndInstallForAndroid()
         {
             ClearOldFiles();
+
+            if (!isBuiltAndroid)
+            {
+                SetPlayerSetting();
+                isBuiltAndroid = true;
+            }
 
             BuildWithProfile(BuildTargetGroup.Android, BuildTarget.Android);
 
@@ -44,19 +73,25 @@ namespace CrossLink
         }
 #endif
 
-        [MenuItem("BuildTools/BuildAllBundles")]
+        [MenuItem("BuildTools/BuildAllBundles", false, 0)]
         public static void BuildAll()
         {
             ClearOldFiles();
             //BuildWithProfile("Windows");
             //BuildWithProfile("Android");                             
 
+            if (isBuiltAndroid)
+            {
+                SetPlayerSetting();
+                isBuiltAndroid = true;
+            }
+
             BuildWithProfile(BuildTargetGroup.Android, BuildTarget.Android);
             BuildWithProfile(BuildTargetGroup.Standalone, BuildTarget.StandaloneWindows);
         }
 
 
-        [MenuItem("BuildTools/ClearOldFiles")]
+        [MenuItem("BuildTools/ClearOldFiles", false, 0)]
         static void ClearOldFiles()
         {
             var buildPath = Application.dataPath + "/Mods/";
@@ -68,7 +103,14 @@ namespace CrossLink
             Debug.Log("ClearOldFiles");
         }
 
-        [MenuItem("BuildTools/InstallModOnWindows")]
+
+        static bool isBuiltAndroid = false;
+        static void SetPlayerSetting()
+        {
+            UnityEditor.EditorUserBuildSettings.androidBuildSubtarget = MobileTextureSubtarget.ASTC;
+        }
+
+        [MenuItem("BuildTools/InstallModOnWindows", false, 11)]
         static void InstallModOnWindows()
         {
             var targetpath = Application.persistentDataPath;
@@ -98,7 +140,7 @@ namespace CrossLink
 
 
         
-        [MenuItem("BuildTools/InstallModOnAndroid")]
+        [MenuItem("BuildTools/InstallModOnAndroid", false, 11)]
         static void InstallModOnAndroid()
         {
 
@@ -182,6 +224,7 @@ namespace CrossLink
             }
 #endif
         }
+
 
         static void BuildWithProfile(BuildTargetGroup buildGroup, BuildTarget buildTarget)
         {
