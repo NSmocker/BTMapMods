@@ -7,8 +7,8 @@ local table = {
 function table:Start()
     self.fc = CL.CharacterMgr.Instance:SpawnRole(self.name)
     if self.fc ~= nil then
-        self.fc.trans.position = self.spawnPosition.position
-        self.fc.trans.rotation = self.spawnPosition.rotation
+        self.fc.trans.position = self.trans.position
+        self.fc.trans.rotation = self.trans.rotation
     end
     
     self.fc.attr.camp = self.relationship
