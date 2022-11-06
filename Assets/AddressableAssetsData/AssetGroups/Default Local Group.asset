@@ -62,11 +62,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: e2cb1a20c2e1df7489f6467e2784fcb9
-    m_Address: Config/SilverEcho_Dream_SimpleScene_Info
+    m_Address: Config/SilverEcho_Dream_Sample_Info
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 86576b3b02a82d44b9d4df7095ad20f5
-    m_Address: SilverEcho_Dream_SilverEcho_Dream
+    m_Address: SilverEcho_Dream_SilverEcho_Sample
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 55653c56c8432504f93e3f371b4d924c

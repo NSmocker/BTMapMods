@@ -1,8 +1,0 @@
-local table = {}
-
-function table:Awake()
-    self.host.gameObject:AddComponent(typeof(CL.StabableObj))
-    print("Hello world, from Silver Echo")
-end
-
-return Class(nil,nil,table)

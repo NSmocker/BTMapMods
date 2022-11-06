@@ -15,8 +15,8 @@ MonoBehaviour:
   loadOnSpawn: 0
   storeItemInfo: []
   sceneModInfo:
-  - sceneName: SilverEcho_Dream_SilverEcho_Dream
-    name: Dungeon Dream
+  - sceneName: SilverEcho_Dream_SilverEcho_Sample
+    name: SE TEST SAMPLE
     desc: 
   skinInfo: []
   roleModInfo: []
