@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.007943032, g: 0.029818445, b: 0.15683815, a: 1}
+  m_IndirectSpecularColor: {r: 0.008057415, g: 0.030138297, b: 0.15711185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -437,7 +437,7 @@ PrefabInstance:
     - target: {fileID: 8083660927858217067, guid: 009a2171eb6ec9a42ab20d158b471d87,
         type: 3}
       propertyPath: script.luaScript
-      value: SilverEcho_Dream_SceneInitScript
+      value: SilverEcho_SampleMap_SceneInitScript
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 009a2171eb6ec9a42ab20d158b471d87, type: 3}
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script:
-    luaScript: SilverEcho_Dream_SpawnGoblinScript
+    luaScript: SilverEcho_SampleMap_SpawnGoblinScript
     objList: []
     numberList: []
     stringList: []
