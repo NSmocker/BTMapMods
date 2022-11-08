@@ -1,0 +1,24 @@
+local StartAndUpdate = {
+   
+}
+
+
+
+function table:Start()
+	print("[StartAndupdate]"+UE.Time.time + "Start activated")   
+end
+
+
+function table:Update()
+   	print("[StartAndupdate]"+UE.Time.time + "Update Ticking")
+end
+
+
+
+
+function TestTrigger:OnTriggerEnter()
+      print("Player touched me")
+end
+
+
+return Class(nil, nil, TestTrigger)
