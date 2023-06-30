@@ -81,6 +81,10 @@ MonoBehaviour:
     m_Address: LuaScript/SilverEcho_PrinceOfPersiaTheSpirit_TestTriggerScript
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: b9f7eb07968e3a14eb3dc4a89d151bc2
+    m_Address: LuaScript/SilverEcho_PrinceOfPersiaTheSpirit_StartAndUpdate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 26cc198b6f316b347a0fe5276ff50b16, type: 2}
   m_SchemaSet:

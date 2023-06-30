@@ -1,0 +1,46 @@
+local StartAndUpdate = {
+   
+}
+
+
+
+function StartAndUpdate:Awake()
+    self.scheId = nul;
+    self.speed =1 ;
+    self.schedulerInterval = 0.5;
+    self.timeBeforeStopping = -1;
+    self.timeBeforeStarting = 0;
+end
+
+
+function StartAndUpdate:Start()
+	print("[StartAndupdate]"+UE.Time.time + "Start activated")   
+    local text_sample = CS.UnityEngine.GameObject.Find('Text (TMP)')
+    local text_component = text_sample:GetComponent('TextMeshPro')
+    
+    self.scheId = CL.Scheduler.Create({},
+        function(sche,t,s)
+            --Code to repeat
+            print("[StartAndupdate]"+UE.Time.time + "Start activated")   
+            text_component.text ="[StartAndupdate]"+UE.Time.time + "Start activated" 
+        
+    end,
+    self.schedulerInterval, self.timeBeforeStopping,self.timeBeforeStarting)
+:SetUpdateChannel(CL.Scheduler.UpdateChannel.FixedUpdate)
+:IgnoreTimeScale(true)
+:SetOnStop(function(sche)print("On Stop Works") end).actionId
+    
+    
+end
+
+
+
+
+
+
+function StartAndUpdate:OnTriggerEnter()
+      print("Player touched me")
+end
+
+
+return Class(nil, nil, TestTrigger)
