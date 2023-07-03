@@ -1,0 +1,24 @@
+newmtl Explosion21Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0336986 0.0332455 0.034615 
+
+d 1
+
+Ns 0
+
+newmtl Explosion22Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0901961 0.0901961 0.0901961 
+
+d 0
+
+Ns 0
+
+map_Ka Explosion22_diff.png
+map_Kd Explosion22_diff.png
+map_d Explosion22_diff.png
+

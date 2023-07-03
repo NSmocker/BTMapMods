@@ -1,0 +1,18 @@
+local LightSeedCounter = 
+{
+   
+}
+
+light_seed_count = 0 
+
+function LightSeedCounter:Start()
+   print("[LightSeedCounter] Current count of seeds is:");
+   print(light_seed_count);
+end
+
+
+
+
+
+
+return Class(nil, nil, LightSeedCounter)

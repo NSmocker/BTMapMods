@@ -1,0 +1,30 @@
+newmtl Spinnythings1Mtl
+Material Color
+Ka 0.000107187 0.436813 0.84337
+Kd 0.000107187 0.436813 0.84337
+Ks 9.66788e-06 0.0393988 0.0760686 
+
+d 1
+
+Ns 0
+
+newmtl Spinnythings2Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0901961 0.0901961 0.0901961 
+
+d 1
+
+Ns 0
+
+newmtl Spinnythings3Mtl
+Material Color
+Ka 0.00143313 0.14198 0.420508
+Kd 0.00143313 0.14198 0.420508
+Ks 0.000129263 0.0128061 0.0379282 
+
+d 1
+
+Ns 0
+

@@ -1,0 +1,40 @@
+newmtl Wave1Mtl
+Material Color
+Ka 0.74453 0.74453 0.737205
+Kd 0.74453 0.74453 0.737205
+Ks 0.0671537 0.0671537 0.066493 
+
+d 1
+
+Ns 0
+
+newmtl GrowingWind1Mtl
+Material Color
+Ka 0.353741 0.363604 0.420508
+Kd 0.353741 0.363604 0.420508
+Ks 0.031906 0.0327956 0.0379282 
+
+d 0.752941
+
+Ns 0
+
+newmtl Meshpart1Mtl
+Material Color
+Ka 0.708298 0.238828 0.0494335
+Kd 0.708298 0.238828 0.0494335
+Ks 0.0638857 0.0215413 0.0044587 
+
+d 1
+
+Ns 0
+
+newmtl Part1Mtl
+Material Color
+Ka 1 0 0
+Kd 1 0 0
+Ks 0.0901961 0 0 
+
+d 1
+
+Ns 0
+

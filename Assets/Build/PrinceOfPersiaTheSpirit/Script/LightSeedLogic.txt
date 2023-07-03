@@ -1,0 +1,21 @@
+local LightSeedLogic = 
+{
+   
+}
+
+
+function LightSeedLogic:Start()
+    self.audio_source = self.trans.gameObject:GetComponent(typeof(CS.UnityEngine.AudioSource));
+    if(audio_source not == nil) print("[LightSeedLogic] AudioSource Initialized");
+end
+
+
+
+
+function LightSeedLogic:OnTriggerEnter()
+      self.audio_source.PlayOneShot(self.audio_source.clip);
+      print("Player touched me");
+end
+
+
+return Class(nil, nil, LightSeedLogic)

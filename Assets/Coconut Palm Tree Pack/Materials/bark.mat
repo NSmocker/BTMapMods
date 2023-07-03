@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: bark
-  m_Shader: {fileID: -6465566751694194690, guid: d21e5ea044dcba646aad9101902af8aa,
+  m_Shader: {fileID: -6465566751694194690, guid: 375f654d02cdc6342bc118b87964dc0b,
     type: 3}
   m_ShaderKeywords: _ENVIRONMENTREFLECTIONS_OFF _NORMALMAP
   m_LightmapFlags: 2
@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_54CF84E2:
-        m_Texture: {fileID: 2800000, guid: 69c952e0cacbc0c428fbb6b81f6c4035, type: 3}
+        m_Texture: {fileID: 2800000, guid: 89da037c7c492514f9e92f8d401be761, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_6BCDC493:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: dfb207cb03df38541a0a4559385db1c3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
