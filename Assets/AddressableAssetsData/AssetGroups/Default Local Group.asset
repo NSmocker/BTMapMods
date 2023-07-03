@@ -85,6 +85,14 @@ MonoBehaviour:
     m_Address: LuaScript/SilverEcho_PrinceOfPersiaTheSpirit_StartAndUpdate
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 7eea2fab7434bb24ea8437bc26d43a86
+    m_Address: LuaScript/SilverEcho_PrinceOfPersiaTheSpirit_LightSeedCounter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc996b80e1a22504bbbb53f39df458d3
+    m_Address: LuaScript/SilverEcho_PrinceOfPersiaTheSpirit_LightSeedLogic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 26cc198b6f316b347a0fe5276ff50b16, type: 2}
   m_SchemaSet:

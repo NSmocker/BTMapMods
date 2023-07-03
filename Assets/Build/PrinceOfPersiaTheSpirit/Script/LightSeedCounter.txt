@@ -3,14 +3,52 @@ local LightSeedCounter =
    
 }
 
-light_seed_count = 0 
+light_seed_count = 1
+light_seed_displayer = nil
 
-function LightSeedCounter:Start()
-   print("[LightSeedCounter] Current count of seeds is:");
-   print(light_seed_count);
+function LightSeedCounter:Awake()
+    self.scheId = null;
+
+    self.speed = 1;
+    self.schedulerInterval = 0.02;
+    self.timeBeforeStopping = -1;
+    self.timeBeforeStarting = 0;
 end
 
+function LightSeedCounter:Start()
+   print("(LightSeedCounter) Current count of seeds is:");
+   print(light_seed_count);
+   
 
+  --Use : to call non static function from C#
+
+
+    self.scheId = CL.Scheduler.Create({},
+    function(sche, t, s)
+        Update()
+    end
+    , self.schedulerInterval, self.timeBeforeStopping, self.timeBeforeStarting)
+    :SetUpdateChannel(CL.Scheduler.UpdateChannel.FixedUpdate)
+    :IgnoreTimeScale(true)
+    :SetOnStop(function(sche)
+        print("Im stopping now")
+    end).actionId
+
+
+
+
+end
+
+function Update()
+    self.trans.pos = UE.Camera.main.trans.pos + UE.Camera.main.trans.forward
+    self.trans.LookAt(UE.Camera.main.trans.pos)
+    self.seeds_displayer.text =  "Light seeds"..tostring(light_seed_count)
+    
+end
+
+function LightSeedCounter:OnDestroy()
+    CL.Scheduler.RemoveSchedule(self.scheId)
+end
 
 
 

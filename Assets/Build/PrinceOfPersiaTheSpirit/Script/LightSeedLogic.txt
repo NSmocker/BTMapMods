@@ -5,16 +5,24 @@ local LightSeedLogic =
 
 
 function LightSeedLogic:Start()
-    self.audio_source = self.trans.gameObject:GetComponent(typeof(CS.UnityEngine.AudioSource));
-    if(audio_source not == nil) print("[LightSeedLogic] AudioSource Initialized");
+    
 end
 
 
 
 
 function LightSeedLogic:OnTriggerEnter()
-      self.audio_source.PlayOneShot(self.audio_source.clip);
-      print("Player touched me");
+      print("Player touched me")
+     
+      light_seed_count =    light_seed_count+1
+      print("Count of seeds from LOGIC  \n")
+      print( light_seed_count)
+      self.seed_source:Play()
+      self.collider_to_off.enabled = false
+      self.renderer_to_off.enabled = false
+      
+      --self.trans.gameObject:GetComponent(typeof(UE.AudioSource)).Play(0)
+      CL.XLuaMgr:DoString(" print('hi there)0)00))')  ")
 end
 
 
