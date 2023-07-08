@@ -1,0 +1,22 @@
+local LunaraPhaseOne = 
+{
+   
+}
+
+
+function LunaraPhaseOne:Start()
+    
+end
+
+
+
+
+function LunaraPhaseOne:OnTriggerEnter(collider)
+     
+    print ("I HAVE A TOUCH FROM:")
+    print(collider.gameObject.name)
+     
+end
+
+
+return Class(nil, nil, LunaraPhaseOne)
