@@ -6,6 +6,7 @@ local LightSeedCounter =
 light_seed_count = 1
 light_seed_displayer = nil
 
+
 function LightSeedCounter:Awake()
     self.scheId = null;
 
@@ -25,7 +26,7 @@ function LightSeedCounter:Start()
 
     self.scheId = CL.Scheduler.Create({},
     function(sche, t, s)
-        Update()
+        self:Update()
     end
     , self.schedulerInterval, self.timeBeforeStopping, self.timeBeforeStarting)
     :SetUpdateChannel(CL.Scheduler.UpdateChannel.FixedUpdate)
@@ -39,12 +40,15 @@ function LightSeedCounter:Start()
 
 end
 
-function Update()
-    self.trans.pos = UE.Camera.main.trans.pos + UE.Camera.main.trans.forward
-    self.trans.LookAt(UE.Camera.main.trans.pos)
-    self.seeds_displayer.text =  "Light seeds"..tostring(light_seed_count)
+function LightSeedCounter:Update()
+    self.light_seed_window.transform.position = UE.Camera.main.transform.position + UE.Camera.main.transform.forward
+    self.light_seed_window.transform:LookAt(UE.Camera.main.transform.position)
+    self.seeds_displayer.text =  tostring(light_seed_count)
     
 end
+
+
+
 
 function LightSeedCounter:OnDestroy()
     CL.Scheduler.RemoveSchedule(self.scheId)

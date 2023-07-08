@@ -14,15 +14,16 @@ end
 function LightSeedLogic:OnTriggerEnter()
       print("Player touched me")
      
-      light_seed_count =    light_seed_count+1
+      light_seed_count =    light_seed_count + 1 --this is variable from "LightSeedCounter.txt"
+      
       print("Count of seeds from LOGIC  \n")
       print( light_seed_count)
-      self.seed_source:Play()
-      self.collider_to_off.enabled = false
-      self.renderer_to_off.enabled = false
+      self.main_system_audio_source:PlayOneShot(self.audio_clip)
+      self.this_collider.enabled = false
+      CS.UnityEngine.Object.Destroy(self.this_object.gameObject)
       
       --self.trans.gameObject:GetComponent(typeof(UE.AudioSource)).Play(0)
-      CL.XLuaMgr:DoString(" print('hi there)0)00))')  ")
+    
 end
 
 
