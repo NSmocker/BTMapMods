@@ -1,0 +1,23 @@
+local AttachToCamera = 
+{
+   
+}
+
+light_seed_count = 1
+light_seed_displayer = nil
+
+
+
+function LightSeedCounter:Start()
+ 
+    self.this_object.transform.position = UE.Camera.main.transform.position 
+    self.this_object.transform.parent = UE.Camera.main.transform 
+    
+end
+
+
+
+
+
+
+return Class(nil, nil, LightSeedCounter)

@@ -1,0 +1,24 @@
+local TriggerEventOnTriggerZone = 
+{
+   
+}
+
+
+function TriggerEventOnTriggerZone:Start()
+    
+end
+
+
+
+
+function TriggerEventOnTriggerZone:OnTriggerEnter(collider)
+     
+    print ("I HAVE A TOUCH FROM:")
+    print(collider.gameObject.name)
+    self.event_maker.actions:Invoke()
+
+     
+end
+
+
+return Class(nil, nil, TriggerEventOnTriggerZone)
