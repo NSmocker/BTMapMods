@@ -97,6 +97,22 @@ MonoBehaviour:
     m_Address: LuaScript/SilverEcho_PrinceOfPersiaTheSpirit_TriggerEventOnTriggerZone
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: b5685aed0085bd04683901823d43bb05
+    m_Address: Assets/SilverEchoContent/Prince meets Elika.mp4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 63360b3c01b8ac64892d9a8704b8c9bc
+    m_Address: Assets/SilverEchoContent/2023-07-08 17-17-41.mp4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 381cc70ed8e91ec4dad4a80a09d87b5e
+    m_Address: Assets/SilverEchoContent/Elika is alive.mp4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ac78d7c96fb58754f98fa57d78d34bfc
+    m_Address: Assets/SilverEchoContent/Past Of Prince.mp4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 26cc198b6f316b347a0fe5276ff50b16, type: 2}
   m_SchemaSet:
